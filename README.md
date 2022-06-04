@@ -33,7 +33,7 @@ resource "aws_vpc" "vpc" {
   )
 }
 module "app_subnets" {
-  source = "git::https://github.com/moreno-terraform/aws_subnets.git"
+  source = "git::https://github.com/moreno-terraform/aws_subnets.git?ref=1.0"
 
   vpc_id = aws_vpc.vpc.id
   vpc_name = local.vpc_name
@@ -43,7 +43,7 @@ module "app_subnets" {
   tags = local.tags
 }
 module "pub_subnets" {
-  source = "git::https://github.com/moreno-terraform/aws_subnets.git"
+  source = "git::https://github.com/moreno-terraform/aws_subnets.git?ref=1.0"
 
   vpc_id = aws_vpc.vpc.id
   vpc_name = local.vpc_name
