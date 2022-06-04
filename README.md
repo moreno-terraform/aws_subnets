@@ -102,7 +102,7 @@ resource "aws_route" "nat-route" {
 
 * `subnet_group_name` - (Required) Subnet group name, that is used with `vpc_name` to define resources names in this module.
 
-* `subnets_cidr_block` - (Required) list of cidr blocks used to create subnets, it is used available zones in the region, if the list of cidr blocks lengh is greater than available zones length, then some subnets will be in the same aws zone.
+* `subnets_cidr_block` - (Required) list of cidr blocks used to create subnets, it is used available zones in the region, if the list of cidr blocks length is greater than available zones length, then some subnets will be in the same aws zone.
 
 * `route_table_id` - (Optional) aws route table ID, it can be used to use an existing route table without create another to subnets created in this module.
 
